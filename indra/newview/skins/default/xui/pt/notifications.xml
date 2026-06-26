@@ -241,7 +241,7 @@ Selecione um único objeto e tente novamente.
 		<usetemplate canceltext="Cancelar" name="yesnocancelbuttons" notext="Não salvar" yestext="Salvar tudo"/>
 	</notification>
 	<notification name="FriendsAndGroupsOnly">
-		As pessoas que não estão na sua lista de amigos não serão informadas de que você está ignorando suas ligações e mensagens instantâneas.
+		As pessoas que não estão na sua lista de amigos não serão informadas de que você está ignorando suas ligações e IMs.
 		<usetemplate name="okbutton" yestext="OK"/>
 	</notification>
 	<notification name="FavoritesOnLogin">
@@ -1273,7 +1273,7 @@ Este é um erro temporário. Ajuste a roupa novamente em alguns minutos e guarde
 		Lamentamos! Você foi desconectado de [CURRENT_GRID].
 
 [MESSAGE]
-		<usetemplate name="okcancelbuttons" notext="Terminar" yestext="Ver bate-papo em &amp;"/>
+		<usetemplate name="okcancelbuttons" notext="Fechar" yestext="Ver bate-papo em &amp;"/>
 	</notification>
 	<notification name="InventoryUnusable">
 		Houve um problema com seu inventário. Por favor, tente fazer login novamente primeiro. Se você receber esta mensagem novamente, entre em contato com o suporte para corrigir a causa do problema.
@@ -1853,7 +1853,7 @@ Continuar?
 	</notification>
 	<notification name="LoginFailedUnknown">
 		Infelizmente, o registro falhou por motivos desconhecidos. Se você continuar vendo esta mensagem, visite [SUPPORT_SITE].
-		<usetemplate name="okbutton" yestext="Terminar"/>
+		<usetemplate name="okbutton" yestext="Fechar"/>
 	</notification>
 	<notification name="DeedObjectToGroup">
 		Quando este objeto é transferido, o grupo recebe:
@@ -1954,12 +1954,12 @@ A adesão é atualmente gratuita.
 	</notification>
 	<notification name="AutorespondModeSet">
 		Resposta automática ativada.
-Os remetentes de mensagens instantâneas recebidas agora recebem a resposta automática configurada.
+Os remetentes de IMs recebidas agora recebem a resposta automática configurada.
 		<usetemplate ignoretext="Quando o status online está definido para resposta automática." name="okignore" yestext="OK"/>
 	</notification>
 	<notification name="AutorespondNonFriendsModeSet">
 		Resposta automática ativada para quem não é amigo.
-As mensagens instantâneas recebidas de pessoas que não estão na lista de amigos agora serão respondidas com a mensagem automática configurada.
+As IMs recebidas de pessoas que não estão na lista de amigos agora serão respondidas com a mensagem automática configurada.
 		<usetemplate ignoretext="Quando a resposta automática está ativada para quem não é amigo." name="okignore" yestext="OK"/>
 	</notification>
 	<notification name="RejectTeleportOffersModeSet">
@@ -2606,7 +2606,7 @@ Mover itens de inventário?
 	</notification>
 	<notification name="ConfirmQuit">
 		Realmente desistiu?
-		<usetemplate ignoretext="Confirme antes de encerrar a sessão" name="okcancelignore" notext="Não termine" yestext="Terminar"/>
+		<usetemplate ignoretext="Confirme antes de encerrar a sessão" name="okcancelignore" notext="Não Fechar" yestext="Fechar"/>
 	</notification>
 	<notification name="ConfirmRestoreToybox">
 		Esta ação irá restaurar seus botões e barras de ferramentas padrão.
@@ -2846,7 +2846,7 @@ As configurações não podem ser salvas com texturas locais.
 		<usetemplate name="okbutton" yestext="OK"/>
 	</notification>
 	<notification name="ForceCloseChatterBoxSession">
-		Sua sessão de bate-papo com [NAME] precisa terminar.
+		Sua sessão de bate-papo com [NAME] precisa fechar.
 [REASON]
 		<usetemplate name="okbutton" yestext="OK"/>
 	</notification>
@@ -2961,7 +2961,7 @@ As texturas devem ter dimensões de potências de 2 e não podem exceder [MAX_SI
 		Nenhuma permissão para rez itens.
 	</notification>
 	<notification name="IMAcrossParentEstates">
-		Não é possível enviar mensagens instantâneas pelas propriedades pai.
+		Não é possível enviar IMs pelas propriedades pai.
 	</notification>
 	<notification name="TransferInventoryAcrossParentEstates">
 		Não é possível transferir inventário entre propriedades principais.
@@ -3438,7 +3438,7 @@ Oferecer teletransporte?
 	</notification>
 	<notification name="OfferCallingCard">
 		[NAME] oferece a você um cartão de visita.
-Um marcador será criado em seu inventário para que você possa enviar mensagens instantâneas rapidamente para este residente.
+Um marcador será criado em seu inventário para que você possa enviar IMs rapidamente para este residente.
 		<form name="form">
 			<button name="Accept" text="Aceitar"/>
 			<button name="Decline" text="Recusar"/>
@@ -3726,8 +3726,8 @@ Eles serão bloqueados por alguns segundos para garantir a segurança.
 		</form>
 	</notification>
 	<notification name="ConfirmCloseAll">
-		Tem certeza de que deseja fechar todas as mensagens instantâneas?
-		<usetemplate ignoretext="Confirme antes de fechar todas as mensagens instantâneas." name="okcancelignore" notext="Cancelar" yestext="OK"/>
+		Tem certeza de que deseja fechar todas as IMs?
+		<usetemplate ignoretext="Confirme antes de fechar todos os IMs." name="okcancelignore" notext="Cancelar" yestext="OK"/>
 	</notification>
 	<notification name="AttachmentSaved">
 		O anexo foi salvo.
@@ -4115,47 +4115,47 @@ Alterar modo e sair?
 	</notification>
 	<notification label="" name="NoClassifieds">
 		A criação e edição de anúncios só é possível no modo Avançado. Gostaria de sair do programa e mudar de modo? A seleção do modo pode ser encontrada na tela de login.
-		<usetemplate name="okcancelbuttons" notext="Não termine" yestext="Terminar"/>
+		<usetemplate name="okcancelbuttons" notext="Não Fechar" yestext="Fechar"/>
 	</notification>
 	<notification label="" name="NoGroupInfo">
 		A criação e edição de grupos só é possível no modo “Avançado”. Gostaria de sair do programa e mudar de modo? A seleção do modo pode ser encontrada na tela de login.
-		<usetemplate name="okcancelbuttons" notext="Não termine" yestext="Terminar"/>
+		<usetemplate name="okcancelbuttons" notext="Não Fechar" yestext="Fechar"/>
 	</notification>
 	<notification label="" name="NoPlaceInfo">
 		A exibição do perfil de localização só é possível no modo “Avançado”. Gostaria de sair do programa e mudar de modo? A seleção do modo pode ser encontrada na tela de login.
-		<usetemplate name="okcancelbuttons" notext="Não termine" yestext="Terminar"/>
+		<usetemplate name="okcancelbuttons" notext="Não Fechar" yestext="Fechar"/>
 	</notification>
 	<notification label="" name="NoPicks">
 		Criar e editar seleções só é possível no modo Avançado. Gostaria de sair do programa e mudar de modo? A seleção do modo pode ser encontrada na tela de login.
-		<usetemplate name="okcancelbuttons" notext="Não termine" yestext="Terminar"/>
+		<usetemplate name="okcancelbuttons" notext="Não Fechar" yestext="Fechar"/>
 	</notification>
 	<notification label="" name="NoWorldMap">
 		A exibição do mapa mundial só é possível no modo “Avançado”. Gostaria de sair do programa e mudar de modo? A seleção do modo pode ser encontrada na tela de login.
-		<usetemplate name="okcancelbuttons" notext="Não termine" yestext="Terminar"/>
+		<usetemplate name="okcancelbuttons" notext="Não Fechar" yestext="Fechar"/>
 	</notification>
 	<notification label="" name="NoVoiceCall">
 		As chamadas de voz só são possíveis no modo Avançado. Gostaria de sair e mudar de modo?
-		<usetemplate name="okcancelbuttons" notext="Não termine" yestext="Terminar"/>
+		<usetemplate name="okcancelbuttons" notext="Não Fechar" yestext="Fechar"/>
 	</notification>
 	<notification label="" name="NoAvatarShare">
 		O compartilhamento só é possível no modo “Avançado”. Gostaria de sair e mudar de modo?
-		<usetemplate name="okcancelbuttons" notext="Não termine" yestext="Terminar"/>
+		<usetemplate name="okcancelbuttons" notext="Não Fechar" yestext="Fechar"/>
 	</notification>
 	<notification label="" name="NoAvatarPay">
 		Pagar outros residentes só é possível no modo Avançado. Gostaria de sair e mudar de modo?
-		<usetemplate name="okcancelbuttons" notext="Não termine" yestext="Terminar"/>
+		<usetemplate name="okcancelbuttons" notext="Não Fechar" yestext="Fechar"/>
 	</notification>
 	<notification label="" name="NoInventory">
 		A exibição do inventário só é possível no modo “Avançado”. Gostaria de sair e mudar de modo?
-		<usetemplate name="okcancelbuttons" notext="Não termine" yestext="Terminar"/>
+		<usetemplate name="okcancelbuttons" notext="Não Fechar" yestext="Fechar"/>
 	</notification>
 	<notification label="" name="NoAppearance">
 		A janela de edição de aparência está disponível apenas no modo Avançado. Gostaria de sair e mudar de modo?
-		<usetemplate name="okcancelbuttons" notext="Não termine" yestext="Terminar"/>
+		<usetemplate name="okcancelbuttons" notext="Não Fechar" yestext="Fechar"/>
 	</notification>
 	<notification label="" name="NoSearch">
 		A pesquisa só é possível no modo “Avançado”. Gostaria de sair e mudar de modo?
-		<usetemplate name="okcancelbuttons" notext="Não termine" yestext="Terminar"/>
+		<usetemplate name="okcancelbuttons" notext="Não Fechar" yestext="Fechar"/>
 	</notification>
 	<notification label="" name="ConfirmHideUI">
 		Esta ação ocultará todos os itens e botões do menu. Para exibi-lo novamente, clique em [SHORTCUT] novamente.
@@ -5693,7 +5693,7 @@ A restauração das configurações requer a reinicialização do visualizador. 
 
 	<notification name="RestoreFinished">
 Restauração concluída! Por favor reinicie o visualizador!
-		<usetemplate name="okbutton" yestext="Terminar"/>
+		<usetemplate name="okbutton" yestext="Fechar"/>
 	</notification>
 	<notification name="ConfirmRestoreQuickPrefsDefaults">
 Esta ação redefinirá diretamente as Configurações rápidas para a configuração padrão.
