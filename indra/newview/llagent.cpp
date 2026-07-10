@@ -2723,8 +2723,10 @@ void LLAgent::endAnimationUpdateUI()
     }
 
     // clean up UI from mode we're leaving
-    if (gAgentCamera.getLastCameraMode() == CAMERA_MODE_MOUSELOOK
-        || gAgentCamera.getLastCameraMode() == CAMERA_MODE_OTS)
+    if ((gAgentCamera.getLastCameraMode() == CAMERA_MODE_MOUSELOOK
+         || gAgentCamera.getLastCameraMode() == CAMERA_MODE_OTS)
+        && (gAgentCamera.getCameraMode() != CAMERA_MODE_MOUSELOOK
+            && gAgentCamera.getCameraMode() != CAMERA_MODE_OTS))
     {
         // <FS:Zi> Unhide chat bar, unless autohide is enabled
         gSavedSettings.setBOOL("MouseLookEnabled", false);
